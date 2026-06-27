@@ -1,0 +1,38 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/plus-jakarta-sans';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cinza-100 text-cinza-900 font-sans;
+  }
+
+  /* Scrollbar sutil no estilo da identidade */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cinza-300 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cinza-400;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', sans-serif;
+  }
+}
