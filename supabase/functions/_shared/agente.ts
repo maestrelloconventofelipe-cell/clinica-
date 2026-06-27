@@ -1,7 +1,7 @@
 // Módulo reutilizável do agente Claude com tool use.
 // Importado por whatsapp-webhook e por outras Edge Functions futuras.
 
-import Anthropic from "npm:@anthropic-ai/sdk";
+import Anthropic from "npm:@anthropic-ai/sdk@0.106.0";
 import type { DbClient } from "./db.ts";
 import { estaLivre, horariosLivres } from "./agenda.ts";
 
